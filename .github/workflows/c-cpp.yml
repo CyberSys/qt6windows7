@@ -39,6 +39,7 @@ jobs:
         cp -Rfv "$PWD/qtbase/src/"* 'C:\Qt\6.10.0\qtbase\src'
 
     - name: Configure and Build Qt
+      shell: cmd
       run: |
         cd C:\Qt\6.10.0
         mkdir qt_build
